@@ -11,16 +11,14 @@ const Item = ({ id, image, stock, name, price, description, category }) => {
           alt="item"
           className="h-40 w-40 rounded-full shadow-sm"
         />
-        <h5 className="mt-6 mb-4 font-bold text-2xl text-black dark:text-white">
-          {name}
-        </h5>
-        <span class="flex items-center justify-start pt-4 pb-6 px-8 text-gray-800 dark:text-gray-400 text-left  font-light">
+        <h5 className="mt-6 font-bold text-2xl text-black ">{name}</h5>
+        <span class="flex items-center justify-start pt-4 pb-6 px-8 text-gray-800 text-left  font-light">
           {description}
         </span>
         <div class="flex mt-4 space-x-4 md:mt-4 md:mb-2">
           <Link
             to={`/details/${id}`}
-            className="inline-flex items-center px-6 py-2 text-sm text-center tracking-wider font-semibold text-white bg-black rounded-sm hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-"
+            className="inline-flex items-center px-6 py-2 text-sm text-center tracking-wider font-semibold text-white bg-black rounded-sm hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300"
           >
             I Want It
           </Link>
