@@ -5,26 +5,11 @@ import { Navigate } from "react-router";
 const Form = ({ clearCart, total, cart }) => {
   const [formData, setFormData] = useState(initialState);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => Navigate("/thank-you/"))
-      .catch((error) => alert(error));
-  };
   return (
     <form
+      action="https://getform.io/f/6152e63f-968f-4ea9-9d53-dfa86409f281"
       method="POST"
-      data-netlify="true"
       name="contact"
-      onSubmit={handleSubmit}
       className="bg-black p-8 border border-black w-full max-w-lg rounded-sm"
     >
       <div className="flex flex-col items-start justify-center">
