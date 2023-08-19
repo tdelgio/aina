@@ -12,4 +12,10 @@
   label {
     @apply py-2;
   }
+  active {
+    @apply border-b-2 border-gray-400 active:font-bold;
+  }
+  .pending {
+    @apply font-normal;
+  }
 }

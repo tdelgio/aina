@@ -8,6 +8,9 @@ import NavMobile from "./NavMobile";
 const NavBar = () => {
   const [display, setDisplay] = useState("hidden");
 
+  const active = "border-gray-400 font-bold";
+  const pending = "border-b-2 border-gray-400 active:font-normal";
+
   return (
     <div className="w-full shadow-md z-50 bg-gray-50 py-6">
       <div className="relative flex items-center lg:px-4 py-4">
@@ -21,25 +24,32 @@ const NavBar = () => {
           </Link>
           <div className="mt-4 xl:mt-6 text-4xl space-x-8 xl:text-5xl font-extralight">
             <NavLink
+              exact
+              className={({ isActive, isPending }) =>
+                isPending ? `${pending}` : isActive ? `${active}` : ""
+              }
               to="/"
-              activeClassName="border-b-2 border-gray-400 font-bold"
             >
               All
             </NavLink>
             <p>-</p>
             <NavLink
               to="/category/Pizza"
-              activeClassName="border-b-2 border-gray-400 font-bold"
+              className={({ isActive, isPending }) =>
+                isPending ? `${pending}` : isActive ? `${active}` : ""
+              }
             >
               Pizza
             </NavLink>
             <p>-</p>
-            <Link
+            <NavLink
               to="/category/Bread"
-              activeClassName="border-b-2 border-gray-400 font-bold"
+              className={({ isActive, isPending }) =>
+                isPending ? `${pending}` : isActive ? `${active}` : ""
+              }
             >
               Bread
-            </Link>
+            </NavLink>
           </div>
           <Link
             to="/cart"
