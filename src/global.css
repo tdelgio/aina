@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@layer base {
+  primaryButton {
+    @apply flex items-center justify-between border border-black rounded-sm max-w-xs w-full shadow-sm bg-white text-black font-semibold;
+  }
+  label {
+    @apply py-2;
+  }
+}
