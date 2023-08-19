@@ -39,9 +39,8 @@ const Form = ({ clearCart, total, cart }) => {
   // }
   return (
     <form
+      netlify
       name="Contact Form"
-      method="POST"
-      data-netlify="true"
       className="bg-black p-8 border border-black w-full max-w-lg rounded-sm"
     >
       <div className="flex flex-col items-start justify-center">
