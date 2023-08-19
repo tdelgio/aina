@@ -39,12 +39,13 @@ const Form = ({ clearCart, total, cart }) => {
   // }
   return (
     <form
-      netlify
-      name="Contact Form"
+      method="POST"
+      data-netlify="true"
+      name="contact"
       className="bg-black p-8 border border-black w-full max-w-lg rounded-sm"
     >
       <div className="flex flex-col items-start justify-center">
-        <input type="hidden" name="form-name" value="Contact Form" />
+        <input type="hidden" name="form-name" value="contact" />
         <div className="flex flex-col items-start space-y-1">
           <label className="font-bold text-white">Phone Number:</label>
           <input

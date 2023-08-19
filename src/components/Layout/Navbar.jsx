@@ -38,7 +38,7 @@ const NavBar = () => {
               to="/category/Bread"
               activeClassName="border-b-2 border-gray-400 font-bold"
             >
-              Breads
+              Bread
             </Link>
           </div>
           <Link

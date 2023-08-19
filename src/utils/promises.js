@@ -62,7 +62,7 @@ const productos = [
     title: "Rosemary Sourdough Bread",
     price: "10",
     description:
-      "Semi whole grain sourdough bread with a touch of rosemary on every toast",
+      "Semi whole grain sourdough bread with a touch of rosemary on every toast.",
     url: "https://www.theperfectloaf.com/wp-content/uploads/2016/07/theperfectloaf-fifty-fifty-whole-wheat-sourdough-title-lighting.jpg",
     stock: 5,
     category: "Bread",
@@ -72,7 +72,7 @@ const productos = [
     title: "Seeds Sourdough Bread",
     price: "10",
     description:
-      "Semi whole grain sourdough bread with sesame & sunflower seeds",
+      "Semi whole grain sourdough bread with sesame & sunflower seeds.",
     url: "https://www.theperfectloaf.com/wp-content/uploads/2016/07/theperfectloaf-fifty-fifty-whole-wheat-sourdough-title-lighting.jpg",
     stock: 5,
     category: "Bread",
@@ -81,7 +81,7 @@ const productos = [
     id: 9,
     title: "Plain Sourdough Bread",
     price: "10",
-    description: "Semi whole grain sourdough bread simple and delociuos",
+    description: "Semi whole grain sourdough bread simple and delociuos.",
     url: "https://www.theperfectloaf.com/wp-content/uploads/2016/07/theperfectloaf-fifty-fifty-whole-wheat-sourdough-title-lighting.jpg",
     stock: 5,
     category: "Bread",
