@@ -20,13 +20,13 @@ const Item = ({ id, image, stock, name, price, description, category }) => {
         <div class="flex mt-4 space-x-4 md:mt-4 md:mb-2">
           <Link
             to={`/details/${id}`}
-            className="inline-flex items-center px-6 py-2 text-sm text-center tracking-wider font-semibold text-white bg-black rounded-sm hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            className="inline-flex items-center px-6 py-2 text-sm text-center tracking-wider font-semibold text-white bg-black rounded-sm hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-"
           >
             I Want It
           </Link>
           <Link
             to={`/details/${id}`}
-            className="inline-flex items-center px-8 py-2 text-sm font-bold text-center tracking-widest  text-black   bg-white border border-gray-900 rounded-sm hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+            className="inline-flex items-center px-8 py-2 text-sm font-bold text-center tracking-widest  text-black   bg-white border border-gray-900 rounded-sm hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 "
           >
             Details
           </Link>
