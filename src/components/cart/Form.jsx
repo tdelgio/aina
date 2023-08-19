@@ -4,6 +4,7 @@ import { Navigate } from "react-router";
 
 const Form = ({ clearCart, total, cart }) => {
   const [formData, setFormData] = useState(initialState);
+  console.log(cart);
 
   return (
     <form
@@ -14,6 +15,12 @@ const Form = ({ clearCart, total, cart }) => {
     >
       <div className="flex flex-col items-start justify-center">
         <input type="hidden" name="form-name" value="bakery" />
+        {cart.map((order) => (
+          <>
+            <input type="hidden" name="name" value={order.quantity} />
+            <input type="hidden" name="name" value={order.item.title} />
+          </>
+        ))}
         <div className="flex flex-col items-start space-y-1">
           <label className="font-bold text-gray-100">Name:</label>
           <input
