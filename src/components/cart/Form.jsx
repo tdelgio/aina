@@ -17,8 +17,11 @@ const Form = ({ clearCart, total, cart }) => {
         <input type="hidden" name="form-name" value="bakery" />
         {cart.map((order) => (
           <>
-            <input type="hidden" name="quantity" value={order.quantity} />
-            <input type="hidden" name="product" value={order.item.title} />
+            <input
+              type="hidden"
+              name="order[]"
+              value={order.quantity + order.item.title}
+            />
           </>
         ))}
         <div className="flex flex-col items-start space-y-1">
