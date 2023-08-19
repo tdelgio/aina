@@ -15,6 +15,14 @@ const Form = ({ clearCart, total, cart }) => {
       <div className="flex flex-col items-start justify-center">
         <input type="hidden" name="form-name" value="contact" />
         <div className="flex flex-col items-start space-y-1">
+          <label className="font-bold text-gray-100">Name:</label>
+          <input
+            className="border-2 border-black pl-2 font-semibold rounded-sm"
+            type="text"
+            name="name"
+          />
+        </div>
+        <div className="flex flex-col items-start space-y-1">
           <label className="font-bold text-gray-100">Phone Number:</label>
           <input
             className="border-2 border-black pl-2 font-semibold rounded-sm"
