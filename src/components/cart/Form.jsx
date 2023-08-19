@@ -9,11 +9,11 @@ const Form = ({ clearCart, total, cart }) => {
     <form
       action="https://getform.io/f/6152e63f-968f-4ea9-9d53-dfa86409f281"
       method="POST"
-      name="contact"
+      name="bakery"
       className="bg-black p-8 border border-black w-full max-w-lg rounded-sm"
     >
       <div className="flex flex-col items-start justify-center">
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="bakery" />
         <div className="flex flex-col items-start space-y-1">
           <label className="font-bold text-gray-100">Name:</label>
           <input
