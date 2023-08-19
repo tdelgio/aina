@@ -19,7 +19,7 @@ const ItemCart = ({ name, price, url, id, quantity }) => {
           className=" h-12 w-14 shadow-md rounded-md"
         />
         <div className="flex flex-col items-start justify-center px-4 w-full">
-          <h2 className="font-bold text-xl whitespace-nowrap">{name}</h2>
+          <h2 className="font-bold text-left text-md lg:text-lg">{name}</h2>
           <p className="tracking-normal ">${price}</p>
         </div>
         <div className="rounded-sm h-12 w-24 mx-2 flex items-center justify-center">

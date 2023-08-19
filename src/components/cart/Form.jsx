@@ -42,24 +42,27 @@ const Form = ({ clearCart, total, cart }) => {
       name="Contact Form"
       method="POST"
       data-netlify="true"
-      className="bg-white p-8 border border-black w-full max-w-lg rounded-sm"
+      className="bg-black p-8 border border-black w-full max-w-lg rounded-sm"
     >
       <div className="flex flex-col items-start justify-center">
         <input type="hidden" name="form-name" value="Contact Form" />
-        <div className="flex flex-col items-start space-y-2">
-          <label className="font-bold">Phone Number:</label>
+        <div className="flex flex-col items-start space-y-1">
+          <label className="font-bold text-white">Phone Number:</label>
           <input
-            className="border-2 border-black pl-2"
+            className="border-2 border-black pl-2 font-semibold rounded-sm"
             type="number"
             name="phone"
           />
         </div>
-        <div className=" flex flex-col items-start space-y-2 mt-2">
-          <label className="font-bold">Message:</label>
-          <textarea className="border-2 border-black pl-1" name="message" />
+        <div className=" flex flex-col items-start space-y-1 mt-2">
+          <label className="font-bold text-white">Message:</label>
+          <textarea
+            className=" text-sm font-semibold border-2 border-black pl-1 rounded-sm w-48 h-24"
+            name="message"
+          />
         </div>
         <button
-          className="bg-black text-white font-light p-4 mt-4 tracking-wide"
+          className="bg-black border text-white font-light p-4 mt-4 mb-2 tracking-wide"
           type="submit"
         >
           Submit Order

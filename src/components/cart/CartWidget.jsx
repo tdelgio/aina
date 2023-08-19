@@ -11,7 +11,7 @@ const Cart = () => {
   const total = totalPrice();
 
   return (
-    <div className="bg-white flex flex-col items-center min-h-screen h-full text-center py-8 space-y-8">
+    <div className="bg-white flex flex-col items-center min-h-screen h-full text-center pt-12 space-y-8 px-2">
       {cartWidgetItems() > 0 ? (
         cart.map((i) => (
           <>
@@ -40,6 +40,7 @@ const Cart = () => {
           </div>
           <BackHome />
           <ButtonClearCart clearCart={clearCart} text="Empty Cart" />
+          <br className="h-8" />
           <Form cart={cart} total={total} clearCart={clearCart} />
         </div>
       )}
