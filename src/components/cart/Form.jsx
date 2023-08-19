@@ -1,47 +1,30 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router";
 // import { getFirestore } from "../../services/getFirebase";
 
 const Form = ({ clearCart, total, cart }) => {
   const [formData, setFormData] = useState(initialState);
 
-  // const db = getFirestore();
-  // const orders = db.collection("orders");
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  // function handleSubmit(e) {
-  //   e.preventDefault();
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-  //   const orderDetail = cart.map((i) => `${i.item.title}: ${i.quantity}`);
-  //   const date = new Date();
-
-  //   const newOrder = {
-  //     date: date,
-  //     buyer: formData,
-  //     item: orderDetail,
-  //     total: total,
-  //   };
-
-  //   orders
-  //     .add(newOrder)
-  //     .then((response) => alert(`Su ID de compra es: ${response.id} `))
-  //     .then(setFormData(initialState))
-  //     .catch((error) => console.log(error))
-  //     .finally(() => {
-  //       clearCart();
-  //       console.log(newOrder);
-  //     });
-  // }
-  // Manejos campos del form
-  // function handleChange(e) {
-  //   setFormData({
-  //     ...formData,e
-  //     [e.target.name]: e.target.value,
-  //   });
-  // }
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => Navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  };
   return (
     <form
       method="POST"
       data-netlify="true"
       name="contact"
+      onSubmit={handleSubmit}
       className="bg-black p-8 border border-black w-full max-w-lg rounded-sm"
     >
       <div className="flex flex-col items-start justify-center">
