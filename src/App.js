@@ -18,20 +18,20 @@ const App = () => {
     <CartContextProvider>
       <BrowserRouter>
         <Elements stripe={stripePromise}>
-          <Layout>
-            <div className="block z-0 bg-white">
-              <Routes>
-                <Route exact path="/" element={[<DesignSystem />]} />
+          {/* <Layout> */}
+          <div className="block z-0 bg-white py-4 px-2">
+            <Routes>
+              <Route exact path="/" element={[<DesignSystem />]} />
 
-                <Route
-                  path="/category/:category"
-                  element={<ItemListContainer />}
-                />
-                <Route path="/details/:id" element={<ItemDetailContainer />} />
-                <Route path="/cart" element={<Cart />} />
-              </Routes>
-            </div>
-          </Layout>
+              <Route
+                path="/category/:category"
+                element={<ItemListContainer />}
+              />
+              <Route path="/details/:id" element={<ItemDetailContainer />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </div>
+          {/* </Layout> */}
         </Elements>
       </BrowserRouter>
     </CartContextProvider>
