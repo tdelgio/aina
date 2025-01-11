@@ -1,5 +1,8 @@
+import SourdoughBreadCard from "../items/SourdoughBreadCard";
+
 export const DesignSystem = () => (
   <div className="space-y-8 flex flex-col ">
+    <SourdoughBreadCard />
     {/* Heading 1 Style Tests */}
     <div className="space-y-8 mx-auto">
       <h1 className="text-[#D98C3E] font-bold text-6xl xl:text-7xl">
