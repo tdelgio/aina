@@ -1,18 +1,18 @@
 export const DesignSystem = () => (
-  <div className="p-16 space-y-8 flex flex-col ">
+  <div className="space-y-8 flex flex-col ">
     {/* Heading 1 Style Tests */}
     <div className="space-y-8 mx-auto">
       <h1 className="text-[#D98C3E] font-bold text-6xl xl:text-7xl">
-        ĀINA - Heading 1
+        ĀINA - Heading
       </h1>
       <h1 className="text-[#F4E1C1] font-bold text-6xl xl:text-7xl">
-        ĀINA - Heading 1
+        ĀINA - Heading
       </h1>
       <h1 className="text-[#4A4A4A] font-bold text-6xl xl:text-7xl">
-        ĀINA - Heading 1
+        ĀINA - Heading
       </h1>
       <h1 className="text-[#000000] font-bold text-6xl xl:text-7xl">
-        ĀINA - Heading 1
+        ĀINA - Heading
       </h1>
     </div>
 
