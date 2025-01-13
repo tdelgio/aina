@@ -34,21 +34,22 @@ const NavBar = () => {
             </NavLink>
             <p>-</p>
             <NavLink
-              to="/category/Pizza"
-              className={({ isActive, isPending }) =>
-                isPending ? `${pending}` : isActive ? `${active}` : ""
-              }
-            >
-              Pizza
-            </NavLink>
-            <p>-</p>
-            <NavLink
               to="/category/Bread"
               className={({ isActive, isPending }) =>
                 isPending ? `${pending}` : isActive ? `${active}` : ""
               }
             >
               Bread
+            </NavLink>
+            <p>-</p>
+
+            <NavLink
+              to="/category/Focaccia"
+              className={({ isActive, isPending }) =>
+                isPending ? `${pending}` : isActive ? `${active}` : ""
+              }
+            >
+              Focaccia
             </NavLink>
           </div>
           <Link

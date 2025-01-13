@@ -23,8 +23,8 @@ const NavMobile = ({ display, setDisplay }) => {
           <StyledLink setDisplay={setDisplay} to="/" text="All" />
           <StyledLink
             setDisplay={setDisplay}
-            to="/category/Pizza"
-            text="Pizzas"
+            to="/category/Focaccia"
+            text="Focaccia"
           />
           <StyledLink
             setDisplay={setDisplay}

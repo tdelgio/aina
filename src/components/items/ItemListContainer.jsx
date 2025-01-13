@@ -28,7 +28,7 @@ const ItemListContainer = () => {
   console.log(products);
 
   return (
-    <div className="py-14 px-4 lg:px-8 w-full bg-black">
+    <div className="py-14 px-4 lg:px-8 w-full bg-[#d98c3e]">
       <ul className="flex flex-row flex-wrap items-start justify-center gap-14">
         {loading ? <AnimationSpin /> : <ItemList products={products} />}
       </ul>
