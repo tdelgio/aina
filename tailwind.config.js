@@ -4,18 +4,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Poppins"],
+        primary: ["Caveat Brush"],
         secondary: ["Permanent Marker", "mono"],
         tertiary: ["Indie Flower", "mono"],
+        text: ["Inter"],
       },
       colors: {
-        primary: "#4F46E5",
-        secondary: "#F59E0B",
+        primary: "#d98c3e",
+        secondary: "#4a4a4a",
         accent: "#3B82F6",
         background: "#F3F4F6",
         text: "#1F2937",
-        light: "#E5E7EB",
-        dark: "#111827",
+        light: "#f4e1c1",
+        dark: "#000000",
         success: "#10B981",
         error: "#EF4444",
         warning: "#F59E0B",

@@ -1,21 +1,70 @@
 @tailwind base;
-
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @layer base {
-  primaryButton {
-    @apply flex items-center justify-between border border-black rounded-sm max-w-xs w-full shadow-sm bg-white text-black font-semibold;
+  /* Typography */
+  :root {
+    --font-heading: "Plus Jakarta Sans", sans-serif;
+    --font-body: "Source Sans Pro", sans-serif;
   }
-  label {
-    @apply py-2;
+
+  html {
+    @apply text-gray-800 antialiased;
   }
-  active {
-    @apply border-b-2 border-gray-400 active:font-bold;
+
+  body {
+    @apply bg-orange-50 text-gray-700;
+    font-family: var(--font-body);
   }
-  .pending {
-    @apply font-normal;
+
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    @apply font-bold text-gray-800;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl mb-4 leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl mb-3 leading-snug;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl mb-3;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl mb-2;
+  }
+
+  h5,
+  h6 {
+    @apply text-lg sm:text-xl mb-2;
+  }
+
+  /* Subheadings */
+  .subheading {
+    font-family: var(--font-heading);
+    @apply text-xl sm:text-2xl font-semibold text-orange-600 mb-3 leading-snug;
+  }
+
+  /* Paragraphs */
+  p {
+    font-family: var(--font-body);
+    @apply font-light text-base leading-relaxed;
+  }
+
+  a {
+    @apply text-orange-600 font-medium hover:underline transition duration-300;
   }
 }

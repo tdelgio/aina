@@ -8,6 +8,9 @@ import Cart from "./components/cart/CartWidget";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import { DesignSystem } from "./components/Layout/DesignSystem";
+import AinaSourdoughComponent from "./components/Hero";
+import "./global.css";
+
 // Load your Stripe public key
 const stripePromise = loadStripe(
   "pk_test_51Pa4ko2KaxVTzcwYp4ve9sRD215v3r9vqgNDucXA83lS8Flr49ZneHIhSGsH7F777zyoR6b7xF3Cm1lIwSlLlIOU005XmWFG5j"
@@ -18,20 +21,24 @@ const App = () => {
     <CartContextProvider>
       <BrowserRouter>
         <Elements stripe={stripePromise}>
-          {/* <Layout> */}
-          <div className="block z-0 bg-white py-4 px-2">
-            <Routes>
-              <Route exact path="/" element={[<DesignSystem />]} />
+          <Layout>
+            <div className="block z-0 bg-white py-4">
+              <Routes>
+                <Route
+                  exact
+                  path="/"
+                  element={[<AinaSourdoughComponent />, <ItemListContainer />]}
+                />
 
-              <Route
-                path="/category/:category"
-                element={<ItemListContainer />}
-              />
-              <Route path="/details/:id" element={<ItemDetailContainer />} />
-              <Route path="/cart" element={<Cart />} />
-            </Routes>
-          </div>
-          {/* </Layout> */}
+                <Route
+                  path="/category/:category"
+                  element={<ItemListContainer />}
+                />
+                <Route path="/details/:id" element={<ItemDetailContainer />} />
+                <Route path="/cart" element={<Cart />} />
+              </Routes>
+            </div>
+          </Layout>
         </Elements>
       </BrowserRouter>
     </CartContextProvider>
