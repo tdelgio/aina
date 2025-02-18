@@ -4,7 +4,7 @@ import { useCartContext } from "../context/CartContext";
 export const CartWidget = () => {
   const { cartWidgetItems } = useCartContext();
   return (
-    <div className="relative bg-black-200 rounded-full p-3">
+    <div className="relative bg-black-200 rounded-full p-3 transform scale-125">
       <svg
         width="25"
         height="25"

@@ -7,7 +7,7 @@ export const AddToCart = ({ handleOnAdd }) => {
       onClick={handleOnAdd}
       className="flex items-center justify-center bg-black text-white  max-w-xs w-full shadow-sm"
     >
-      <span className="flex space-x-4 p-2 mx-auto bg-black font-semibold tracking-wider text-gray-100">
+      <span className="flex space-x-4 p-4 mx-auto bg-black font-semibold tracking-wider text-gray-100">
         <svg
           width="24"
           height="24"

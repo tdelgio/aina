@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Poppins"],
-        secondary: ["Permanent Marker", "mono"],
-        tertiary: ["Indie Flower", "mono"],
+        fontFamily: {
+          mono: ['"Roboto Mono"', "monospace"],
+        },
       },
     },
   },

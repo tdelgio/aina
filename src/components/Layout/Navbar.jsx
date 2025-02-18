@@ -8,21 +8,24 @@ import NavMobile from "./NavMobile";
 const NavBar = () => {
   const [display, setDisplay] = useState("hidden");
 
-  const active = "border-gray-400 font-bold";
+  const active = "border-gray-400 font-bold underline ";
   const pending = "border-b-2 border-gray-400 active:font-normal";
 
   return (
-    <div className="w-full shadow-md z-50 bg-gray-50 py-6">
-      <div className="relative flex items-center lg:px-4 py-4">
-        <div className="flex flex-col justify-center w-full items-center tracking-normal font-semibold">
+    <div className="w-full shadow-md z-50 bg-gray-50 py-6 lg:py-16 font-mono">
+      <div className="relative flex items-center lg:px-4 py-2">
+        <div className=" flex flex-col justify-center w-full items-center tracking-normal font-semibold">
           <Link
             className="text-center"
             onClick={() => setDisplay("hidden")}
             to="/"
           >
             <Logo />
+            <p className="text-lg lg:text-3xl font-sans font-extralight tracking-widest">
+              ORGANIC SOURDOUGH
+            </p>
           </Link>
-          <div className="mt-4 xl:mt-6 text-4xl space-x-8 xl:text-5xl font-extralight">
+          <div className="flex flex-col lg:flex-row justify-center w-1/2 px-4 mt-4 xl:mt-10   text-xl space-y-1 lg:space-y-0 lg:space-x-12 xl:text-3xl font-extralight">
             <NavLink
               exact
               className={({ isActive, isPending }) =>
@@ -32,7 +35,7 @@ const NavBar = () => {
             >
               All
             </NavLink>
-            <p>-</p>
+            {/* <p>-</p> */}
             <NavLink
               to="/category/Bread"
               className={({ isActive, isPending }) =>
@@ -41,7 +44,16 @@ const NavBar = () => {
             >
               Bread
             </NavLink>
-            <p>-</p>
+            {/* <p>-</p> */}
+            <NavLink
+              to="/category/Pastries"
+              className={({ isActive, isPending }) =>
+                isPending ? `${pending}` : isActive ? `${active}` : ""
+              }
+            >
+              Pastries
+            </NavLink>
+            {/* <p>-</p> */}
 
             <NavLink
               to="/category/Focaccia"
@@ -54,7 +66,7 @@ const NavBar = () => {
           </div>
           <Link
             to="/cart"
-            className="absolute top-2 right-8 xl:top-8 xl:right-28"
+            className="absolute top-3 right-8 xl:top-8 xl:right-28 "
           >
             <CartWidget />
           </Link>

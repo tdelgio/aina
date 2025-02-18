@@ -11,25 +11,25 @@ const ItemListContainer = () => {
   const { category } = useParams();
 
   useEffect(() => {
-    if (category === undefined) {
-      getProducts.then((response) => {
-        setProducts(response);
-        setLoading(false);
+    setLoading(true); // Reset loading state when category changes or component mounts
+    getProducts
+      .then((response) => {
+        if (category === undefined) {
+          setProducts(response); // Set all products if no category
+        } else {
+          setProducts(response.filter((i) => category === i.category)); // Filter by category
+        }
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false after products are fetched
       });
-    } else {
-      getProducts.then(
-        (response) =>
-          setProducts(response.filter((i) => category === i.category)),
-        setLoading(false)
-      );
-    }
   }, [category]);
 
   console.log(products);
 
   return (
-    <div className="py-14 px-4 lg:px-8 w-full bg-[#d98c3e]">
-      <ul className="flex flex-row flex-wrap items-start justify-center gap-14">
+    <div className="py-12 px-12 lg:px-8 w-full bg-black">
+      <ul className="flex flex-wrap items-center justify-center gap-14 max-w-7xl mx-auto">
         {loading ? <AnimationSpin /> : <ItemList products={products} />}
       </ul>
     </div>
