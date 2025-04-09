@@ -12,7 +12,7 @@ const NavBar = () => {
   const pending = "border-b-2 border-gray-400 active:font-normal";
 
   return (
-    <div className="w-full shadow-md z-50 bg-gray-50 py-6 lg:py-16 font-mono">
+    <div className="w-full shadow-md z-50 bg-gray-50 py-6 lg:py-16">
       <div className="relative flex items-center lg:px-4 py-2">
         <div className=" flex flex-col justify-center w-full items-center tracking-normal font-semibold">
           <Link

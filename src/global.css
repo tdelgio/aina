@@ -3,11 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
-
 @layer base {
   * {
-    @apply font-monospace;
+    @apply bg-white;
   }
   primaryButton {
     @apply flex items-center justify-between border border-black rounded-sm max-w-xs w-full shadow-sm bg-white text-black font-semibold;

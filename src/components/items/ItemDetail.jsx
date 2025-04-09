@@ -11,7 +11,7 @@ const ItemDetail = ({ item }) => {
   };
 
   return (
-    <div className="my-8 xl:my-0 max-w-sm xl:max-w-full mx-auto flex items-center w-full bg-white rounded-md shadow-lg font-mono">
+    <div className="my-8 xl:my-0 max-w-sm xl:max-w-full mx-auto flex items-center w-full bg-white rounded-md shadow-lg">
       <div
         className="flex flex-col xl:p-6 2xl:p-12 xl:flex-row items-center justify-center min-h-full w-full"
         key={item.id}
