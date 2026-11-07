@@ -3,8 +3,8 @@ const productos = [
     id: 1,
     title: "Baguette",
     price: "3",
-    description:
-      "Handcrafted sourdough baguette with a crispy crust and soft, airy crumb.",
+    description: "Bread Flour, Water, Salt",
+    // "Handcrafted sourdough baguette with a crispy crust and soft, airy crumb.",
     url: "https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     stock: 5,
     category: "Bread",
