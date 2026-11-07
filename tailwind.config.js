@@ -1,16 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}/*.{js,jsx,ts,tsx}"],
-
+  content: [
+    "./src/**/*.{html,js,jsx,ts,tsx}", // Or your project's file extensions
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        fontFamily: {
-          mono: ['"Roboto Mono"', "monospace"],
-        },
-      },
-    },
-  },
-  variants: {
     extend: {},
   },
   plugins: [],

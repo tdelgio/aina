@@ -1,21 +1,28 @@
 @tailwind base;
-
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   * {
-    @apply bg-white;
+    @apply text-red-500;
   }
-  primaryButton {
+
+  .subheading {
+    @apply text-2xl;
+  }
+
+  .primaryButton {
     @apply flex items-center justify-between border border-black rounded-sm max-w-xs w-full shadow-sm bg-white text-black font-semibold;
   }
+
   label {
     @apply py-2;
   }
-  active {
-    @apply border-b-2 border-gray-400 active:font-bold;
+
+  .active {
+    @apply border-b-2 border-gray-400 font-bold;
   }
+
   .pending {
     @apply font-normal;
   }

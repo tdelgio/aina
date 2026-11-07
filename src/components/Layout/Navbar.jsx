@@ -21,7 +21,7 @@ const NavBar = () => {
             to="/"
           >
             <Logo />
-            <p className="text-lg lg:text-3xl font-sans font-extralight tracking-widest">
+            <p className="subheading lg:text-3xl tracking-widest">
               ORGANIC SOURDOUGH
             </p>
           </Link>

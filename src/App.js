@@ -12,7 +12,7 @@ const App = () => {
     <CartContextProvider>
       <BrowserRouter>
         <Layout>
-          <div className="block z-0  bg-black">
+          <div className="block z-0 bg-black">
             <Routes>
               <Route exact path="/" element={<ItemListContainer />} />
               <Route

@@ -8,7 +8,7 @@ const Item = ({ id, image, stock, name, price, description, category }) => {
         <img
           src={image}
           alt="item"
-          className="h-40 w-40 rounded-full shadow-sm"
+          className="h-40 w-40 rounded-full shadow-sm "
         />
         <h5 className="mt-6  uppercase tracking-widest text-center text-2xl text-black">
           {name}
